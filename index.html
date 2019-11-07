@@ -1,44 +1,120 @@
 <!DOCTYPE html>
+<!-- The code for this website is HEAVILY inspired by https://fabiensanglard.net/ -->
 <html>
-<head>
-	<style type="text/css">
-		body {
-			font-family: monospace;		/* Linux = DejaVu Sans Mono*/
-						 couriter;		/* MacOSX & Windows = Couriter */
-			font-size: 16;
-			max-width: 900px;
-			padding-left: 2ch;
-			padding-right: 3ch;
-			margin: 0 auto;
-			background: #F5F5F0;
-		}
-	</style>
-	<title>Programmer Josh</title>
-</head>
-<body>
-	<b>About Me</b>
-	<hr>
-	<p>I'm Josh O'Connor. I'm currently working at Magic Leap, helping define mixed reality gaming.</p>
-	<p>I've been making games since 2010. I started at Sidhe Interactive in New Zealand working on a console title, then the studio became PikPok when it shifted focus over to mobile. I worked my way up to a senior programmer position and was even lead programmer on a few titles. I made the shift back into console games at Mediatonic.</p>
-	<b>Projects</b>
-	<hr>
-	<ul>
-		<li>Unannounced Title, Senior Programmer, Magic Leap</li>
-		<li>Unannounced Title, Lead Programmer, Magic Leap</li>
-		<li>Dr Grordbort's Invaders, Senior Programmer, Magic Leap</li>
-		<li>Breaking Bad: Empire Business, Senior Programmer, Mediatonic</li>
-		<li>Fable Fortune, Senior Programmer, Mediatonic</li>
-		<li>Breakneck, Lead Programmer, PikPok</li>
-		<li>Halos Fun, Lead Programmer, PikPok</li>
-		<li>Flick Kick Football Legends, Programmer, PikPok</li>
-		<li>Turbo FAST, Programmer, PikPok</li>
-		<li>TapDragonDrop, Programmer, PikPok</li>
-		<li>Velocirapture, Programmer, PikPok</li>
-		<li>Rugby Challenge, Programmer, PikPok</li>
-		<li>Robot Unicorn Attack 2, Additional Programmer, PikPok</li>
-		<li>OREO: Twist, Lick, Dunk!, Additional Programmer, PikPok</li>
-		<li>DreamWorks Dash n Drop, Additional Programmer, PikPok</li>
-		<li>Dead Steel, Lead Programmer, Media Design School</li>
-	</ul>
-</body>
+	<head>
+		<style type="text/css">
+			body {
+				font-family: Monospace, /* Linux = DejaVu Sans Mono */
+				Courier;   /* MacOSX & Windows = Courier */
+				font-size: 16;
+				max-width: 900px;  /* For Desktop PC (see @media for Tablets/Phones) */
+				padding-left: 2ch;
+				padding-right: 3ch;
+				margin: 0 auto;
+				background: #F5F5F0;
+			}
+
+			a {
+				color: black;
+				font-weight: bold;
+			}
+
+			img {
+				border: none;
+			}
+
+			p {
+				margin-top: 0px;
+				margin-bottom: 3ch;
+				text-align: justify;
+			}
+
+			sup {
+				vertical-align: 0.3em;
+				font-size: 0.65em;
+			}
+
+			pre {
+				font-family: Monospace, /* Linux = DejaVu Sans Mono */
+				Courier;   /* MacOSX & Windows = Courier */
+				font-size: 16;
+				background-color: white;
+				border: 1px solid Black;
+				padding-left: 2ch;
+				padding-top: 1ch;
+				padding-bottom: 1ch;
+				overflow: scroll;
+			}
+
+			div {
+				text-transform: uppercase;
+			}
+
+			@media (max-width: 500px) { /* For small screen decices */
+				body {
+					font-size: 12px;
+				}
+				pre {
+					font-size: 12px;
+				}
+			}
+
+			.title {
+				text-decoration: none;
+			}
+		</style>
+		<title>Programmer Josh</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	</head>
+	<body>
+		<br>
+		<center>
+			<div style="display: inline-block; vertical-align:middle;">
+				<a href="/" style="text-decoration: none;"><b>JOSH O'CONNOR'S WEBSITE</b><br>
+				</a>
+				<hr/>
+				<div style="text-align: center;display: inline-block; width: 100%;">
+					<a class="title">Senior Programmer</a>
+				</div>
+
+<!-- TODO(Josh): Add sub-pages
+	 			<div style="text-align: justify;display: inline-block; width: 100%;">
+					<a class="title" href="/about">ABOUT</a> &nbsp;<a class="title" href="/experience">EXPERIENCE</a> &nbsp;<a class="title" href="/projects">PROJECTS</a>
+				</div>
+-->
+			</div>
+		</center>
+		<br><br>
+		<br>
+		<br>
+		<div style="text-transform: uppercase;"><b>About</b></div>
+		<hr>
+		<p>This is my personal website. I'm currently working at Magic Leap, helping define mixed reality gaming.</p>
+		<b>PROJECTS</b>
+		<hr>
+		<ul>
+			<li>Unannounced Title, Senior Programmer, Magic Leap</li>
+			<li>Unannounced Title, Lead Programmer, Magic Leap</li>
+			<li>Dr Grordbort's Invaders, Senior Programmer, Magic Leap</li>
+			<li>Breaking Bad: Empire Business, Senior Programmer, Mediatonic</li>
+			<li>Fable Fortune, Senior Programmer, Mediatonic</li>
+			<li>Breakneck, Lead Programmer, PikPok</li>
+			<li>Halos Fun, Lead Programmer, PikPok</li>
+			<li>Flick Kick Football Legends, Programmer, PikPok</li>
+			<li>Turbo FAST, Programmer, PikPok</li>
+			<li>TapDragonDrop, Programmer, PikPok</li>
+			<li>Velocirapture, Programmer, PikPok</li>
+			<li>Rugby Challenge, Programmer, PikPok</li>
+			<li>Robot Unicorn Attack 2, Additional Programmer, PikPok</li>
+			<li>OREO: Twist, Lick, Dunk!, Additional Programmer, PikPok</li>
+			<li>DreamWorks Dash n Drop, Additional Programmer, PikPok</li>
+			<li>Dead Steel, Lead Programmer, Media Design School</li>
+		</ul>
+		<br>
+		<hr>
+		<center>
+			*
+		</center>
+		</div>
+	</body>
 </html>
