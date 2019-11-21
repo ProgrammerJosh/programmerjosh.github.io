@@ -46,8 +46,38 @@
 				overflow: scroll;
 			}
 
-			div {
-				text-transform: uppercase;
+			.title {
+				text-decoration: none;
+			}
+
+			.callout_game {
+				margin: 10px auto 25px auto;
+				padding: 10px 10px 10px 10px;
+				background-color: #f2f2f2;
+				border: 1px solid #dcdcdc;
+				-webkit-border-radius:8px;
+				-moz-border-radius:8px;
+				border-radius:8px;
+				text-shadow: #fff 1px 1px 0;
+				position: relative;
+			   	box-shadow: 0px 0px 5px 2px #aaa;
+			   	display: inline-block;
+			}
+			.callout_game p {
+				margin: 0;
+				padding: 0px 15px 0px 0px;
+			}
+			.callout_game .left {
+				float: left;
+				width: 20%;
+			}
+			.callout_game .left img{
+				width: 100%;
+				vertical-align: middle;
+			}
+			.callout_game .right {
+				float: right;
+				width: 75%;
 			}
 
 			@media (max-width: 500px) { /* For small screen decices */
@@ -57,11 +87,25 @@
 				pre {
 					font-size: 12px;
 				}
-			}
 
-			.title {
-				text-decoration: none;
+				.callout_game .left {
+					float: inherit;
+					width: 100%;
+				}
+				.callout_game .left img{
+					width: 60%;
+					display: block;
+					margin-left: auto;
+					margin-right: auto;
+					vertical-align: baseline;
+					margin-bottom: 10px;
+				}
+				.callout_game .right {
+					float: inherit;
+					width: 100%;
+				}
 			}
+			
 		</style>
 		<title>Programmer Josh</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -73,15 +117,9 @@
 				<a href="/" style="text-decoration: none;"><b>JOSH O'CONNOR'S WEBSITE</b><br>
 				</a>
 				<hr/>
-				<div style="text-align: center;display: inline-block; width: 100%;">
+				<div style="text-align: center; text-transform: uppercase; display: inline-block; width: 100%;">
 					<a class="title">Senior Game Programmer</a>
 				</div>
-
-<!-- TODO(Josh): Add sub-pages
-	 			<div style="text-align: justify;display: inline-block; width: 100%;">
-					<a class="title" href="/about">ABOUT</a> &nbsp;<a class="title" href="/experience">EXPERIENCE</a> &nbsp;<a class="title" href="/projects">PROJECTS</a>
-				</div>
--->
 			</div>
 		</center>
 		<br><br>
@@ -89,29 +127,170 @@
 		<br>
 		<div style="text-transform: uppercase;"><b>About</b></div>
 		<hr>
-		<p>I am a senior programmer in the game development industry who has shipped several award-winning titles across a broad range of platforms. I'm currently working at Magic Leap, helping define mixed reality gaming.</p>
-		<p>I write clean pragmatic code. When code needs to be optimised, I have a professional level knowledge of C# and C++, which allows me to refactor for speed and performance. I have developed games using several engines, with a special focus on Unity.</p>
-		<p>I have a very optimistic and passionate approach to my work which positively affects those around me. I love programming and am constantly developing myself both professionally and personally.</p>
-		<b>PROJECTS</b>
+		<p>
+			I am a senior programmer in the game development industry who has shipped several award-winning titles across a broad range of platforms. I'm currently working at Magic Leap, helping define mixed reality gaming.
+		</p>
+		<p>
+			I write clean pragmatic code. When code needs to be optimised, I have a professional level knowledge of C# and C++, which allows me to refactor for speed and performance. I have developed games using several engines, with a special focus on Unity.
+		</p>
+		<p>
+			I have a very optimistic and passionate approach to my work which positively affects those around me. I love programming and am constantly developing myself both professionally and personally.
+		</p>
+
+		<b>Projects</b>
 		<hr>
-		<ul>
-			<li>Unannounced Title, Senior Programmer, Magic Leap</li>
-			<li>Unannounced Title, Lead Programmer, Magic Leap</li>
-			<li>Dr Grordbort's Invaders, Senior Programmer, Magic Leap</li>
-			<li>Breaking Bad: Empire Business, Senior Programmer, Mediatonic</li>
-			<li>Fable Fortune, Senior Programmer, Mediatonic</li>
-			<li>Breakneck, Lead Programmer, PikPok</li>
-			<li>Halos Fun, Lead Programmer, PikPok</li>
-			<li>Flick Kick Football Legends, Programmer, PikPok</li>
-			<li>Turbo FAST, Programmer, PikPok</li>
-			<li>TapDragonDrop, Programmer, PikPok</li>
-			<li>Velocirapture, Programmer, PikPok</li>
-			<li>Rugby Challenge, Programmer, PikPok</li>
-			<li>Robot Unicorn Attack 2, Additional Programmer, PikPok</li>
-			<li>OREO: Twist, Lick, Dunk!, Additional Programmer, PikPok</li>
-			<li>DreamWorks Dash n Drop, Additional Programmer, PikPok</li>
-			<li>Dead Steel, Lead Programmer, Media Design School</li>
-		</ul>
+
+		<div class="callout_game">
+            <div class="left">
+            	<img src="projects/images/bknk_icon.png">
+            </div>
+            <div class="right">
+            	<b>Breakneck</b>
+            	<br>
+            	Lead Programmer, PikPok, iOS/Android
+            	<br>
+            	<br>
+            	<p>
+            		I was the Lead Programmer for the first half of this title before leaving PikPok. I was responsible for designing the game architecture and managing the other programmers on the team. I wrote tools for the procedural level generation.
+            	</p>
+            </div>
+	    </div>
+	    <div class="callout_game">
+            <div class="left">
+            	<img src="projects/images/wh_icon.png">
+            </div>
+            <div class="right">
+            	<b>Halos Fun</b>
+            	<br>
+            	Lead Programmer, PikPok, iOS/Android
+            	<br>
+            	<br>
+            	<p>
+            		I was responsible for designing the game architecture and managing the other programmers on the team. I used Box2D to create a framerate independent deterministic physics simulation. I wrote an in-game level editor to allow the designers to rapidly create/iterate on levels.
+            	</p>
+            </div>
+	    </div>
+	    <div class="callout_game">
+            <div class="left">
+            	<img src="projects/images/fkf2_icon.png">
+            </div>
+            <div class="right">
+            	<b>Flick Kick Football Legends</b>
+            	<br>
+            	Programmer, PikPok, iOS/Android
+            	<br>
+            	<br>
+            	<p>
+            		I was brought onto the project for the 1.3 update to support them in localisation. Our engine at the time used sprite sheets to render text but had to integrate TTF support to allow for localisation into Chinese, Korean, Japanese, and Russian. I worked on integrating this new tech into our UI tool.
+            	</p>
+            </div>
+	    </div>
+	    <div class="callout_game">
+            <div class="left">
+            	<img src="projects/images/turbo_icon.png">
+            </div>
+            <div class="right">
+            	<b>Turbo FAST</b>
+            	<br>
+            	Programmer, PikPok, iOS/Android
+            	<br>
+            	<br>
+            	<p>
+            		I worked on gameplay, AI, UI, and leaderboards. I implemented a snail AI competitor very late in development as requested by DreamWorks, which included: personalities, steering behaviours, and collision physics. The game featured many different race modes, and I wrote a generic XML system for creating and extending race event types.
+            	</p>
+            </div>
+	    </div>
+	    <div class="callout_game">
+            <div class="left">
+            	<img src="projects/images/dwd_icon.png">
+            </div>
+            <div class="right">
+            	<b>DreamWorks Dragons: TapDragonDrop</b>
+            	<br>
+            	Programmer, PikPok, iOS/Android
+            	<br>
+            	<br>
+            	<p>
+            		I worked on gameplay, UI, achievements, and the store. I implemented gameplay props which the user could interact with, and worked with physics to make all the elements work together. I worked on UI to incorporate 2D screen elements interacting with 3D world elements for issuing move requests to the dragon, along with game feel for panning and zooming.
+            	</p>
+            </div>
+	    </div>
+	    <div class="callout_game">
+            <div class="left">
+            	<img src="projects/images/vr_icon.png">
+            </div>
+            <div class="right">
+            	<b>Velocirapture</b>
+            	<br>
+            	Programmer, PikPok, iOS
+            	<br>
+            	<br>
+            	<p>
+            		I worked on gameplay, effects, and UI. I scripted unlockable powers and an efficient infinitely tileable level. I worked closely with the artists to implement feedback effects. The UI went through many iterations before the end of the project, and I am really proud of how the carousel on the level select turned out.
+            	</p>
+            </div>
+	    </div>
+	    <div class="callout_game">
+            <div class="left">
+            	<img src="projects/images/rc_icon.png">
+            </div>
+            <div class="right">
+            	<b>Rugby Challenge</b>
+            	<br>
+            	Programmer, Sidhe, PlayStation 3/Xbox 360
+            	<br>
+            	<br>
+            	<p>
+            		I was on the UI team, but towards the end of the project I was working very closely with the network programmer to stable connections for all the target platforms. The UI was a huge part of the game, I worked on the player editor, team editor, competition editor, tutorials, team management and many more. A lot of time was dedicated to platform requirements, which also meant lots of platform specific learning.
+            	</p>
+            </div>
+	    </div>
+	    <div class="callout_game">
+            <div class="left">
+            	<img src="projects/images/rua2_icon.png">
+            </div>
+            <div class="right">
+            	<b>Robot Unicorn Attack 2</b>
+            	<br>
+            	Programmer, PikPok, iOS/Android
+            	<br>
+            	<br>
+            	<p>
+            		I joined the project late in development. The Lead Programmer took a few weeks off so I was brought in to replace him while he was away. I worked on porting the game to Android, implementing leaderboards, and managing the other programmers.
+            	</p>
+            </div>
+	    </div>
+	    <div class="callout_game">
+            <div class="left">
+            	<img src="projects/images/oreo_icon.png">
+            </div>
+            <div class="right">
+            	<b>OREO: Twist, Lick, Dunk!</b>
+            	<br>
+            	Additional Programmer, PikPok, iOS/Android
+            	<br>
+            	<br>
+            	<p>
+            		I joined the project towards the end of development as an Additional Programmer to help them get through their backlog of tasks. I worked on the UI and leaderboards. The UI features unlockable cookies with pictures that were dynamically generated to prevent hundreds of unique textures.
+            	</p>
+            </div>
+	    </div>
+	    <div class="callout_game">
+            <div class="left">
+            	<img src="projects/images/rog_icon.png">
+            </div>
+            <div class="right">
+            	<b>DreamWorks Dash n Drop</b>
+            	<br>
+            	Additional Programmer, PikPok, iOS/Android
+            	<br>
+            	<br>
+            	<p>
+            		I joined the project towards the end of development as an Additional Programmer. I worked on the UI, New User Flow, and gameplay support. The UI featured many complex animations at a time when our UI animation tools were very fresh. The New User Flow required UI masking to be added, and the UI input to ignore masked elements.
+            	</p>
+            </div>
+	    </div>
+
 		<br>
 		<hr>
 		<center>
